@@ -1,0 +1,125 @@
+.todolist-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 35px;
+  h1 {
+    color: #316367;
+  }
+  .btn-container {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 40px;
+    #add-task {
+      background: white;
+      color: dodgerblue;
+      border: 1px solid dodgerblue;
+      padding: 12px 18px;
+      font-size: 17px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+      cursor: pointer;
+      @media (max-width: 500px) {
+        padding: 10px 15px;
+        font-size: 15px;
+      }
+      &:hover {
+        background-color: dodgerblue;
+        color: white;
+      }
+    }
+  }
+
+  .resp-table {
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+
+  table {
+    width: 100%;
+    box-shadow: 0 6px 13px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-collapse: collapse;
+    overflow-x: auto;
+
+    tr {
+      border: none;
+    }
+    td,
+    th {
+      border: none;
+      text-align: left;
+      padding: 0.8em 1.2em;
+    }
+    td {
+      width: 215px;
+      vertical-align: top;
+      &.status {
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+    }
+    th {
+      background-color: #316367;
+      color: white;
+    }
+  }
+}
+
+$breakpoint: 750px;
+$heading-color: #43bac0;
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  margin: 0 20px;
+  box-shadow: 0 6px 13px rgba(0, 0, 0, 0.2);
+
+  .table-row {
+    width: 100%;
+    display: flex;
+    .table-cell {
+      box-sizing: border-box;
+      flex: 1;
+      padding: 0.8em 1.2em;
+      list-style: none;
+      text-align: left;
+      &.column-heading {
+        background-color: #316367;
+        color: white;
+        padding: 1em;
+        padding-left: 7px;
+      }
+    }
+  }
+
+  .test {
+    width: 100%;
+    padding-bottom: 7px;
+    .holder {
+      display: flex;
+      padding: 0 7px;
+      padding: 11px 7px;
+      padding-left: 15px;
+      transition: 1s ease-in-out;
+      .row {
+        flex: 0.27;
+        text-align: left;
+        padding-right: 15px;
+        .content {
+          &.status {
+            font-weight: bolder;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}

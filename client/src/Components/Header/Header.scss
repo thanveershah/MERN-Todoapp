@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 -5px 12px silver;
+  @media (max-width: 500px) {
+    box-shadow: none;
+  }
+  align-items: center;
+  div {
+    padding: 0 50px;
+    @media (max-width: 576px) {
+      padding: 0 15px;
+    }
+  }
+  .right-section {
+    a {
+      border: 1px solid #0dc9b0;
+      background: white;
+      color: #0dc9b0;
+      padding: 6px 30px;
+      font-weight: 500;
+      border-radius: 20px;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background: #0dc9b0;
+        color: white;
+      }
+    }
+  }
+}
